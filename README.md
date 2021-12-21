@@ -86,8 +86,18 @@ python examples/dqn_cartpole.py
 This is a very simple example and it should converge relatively quickly, so it's a great way to get started!
 It also visualizes the game during training, so you can watch it learn. How cool is that?
 
-
-
+## Macbook M1 installation:
+If your package versions have conflicting dependencies then do these steps:
+1. Download and install [Conda env](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh):
+2. ```chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh```
+3. ```sh ~/Downloads/Miniforge3-MacOSX-arm64.sh```
+4. ```source ~/miniforge3/bin/activate```
+5. ```conda create -n myenv python=3.8```
+6. ```conda activate myenv``` 
+7. ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/apple/tensorflow_macos/master/scripts/download_and_install.sh)"```
+8. You need to show existed Python 3.8 virtual environment. For example: ```~/miniforge3/envs/myenv/```
+9. ```pip install keras-rl```
+  
 If you have questions or problems, please file an issue or, even better, fix the problem yourself and submit a pull request!
 
 
